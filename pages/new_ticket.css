@@ -1,0 +1,119 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  background-color: white;
+  padding-top: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background-color: #8cafd4;
+  color: white;
+}
+
+.sidebar .image {
+  margin-top: 15rem;
+  margin-left: 2rem;
+}
+
+.navbar-custom {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-custom .welcome-message {
+  font-size: 1.25rem;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-dropdown img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.user-dropdown .username {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.user-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #000;
+}
+
+.ticket-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.ticket-body-icons i:hover {
+  color: #007bff;
+}
+
+.badge-category {
+  background-color: #007bff;
+  color: white;
+}
+
+.badge-priority {
+  background-color: #dc3545;
+  color: white;
+}
+
+.badge-status {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.assign-btn,
+.reply-btn {
+  margin-top: 15px;
+}
+
+.status-dropdown::before {
+  display: inline-block;
+  content: "\25CF";
+  color: #28a745;
+  margin-right: 5px;
+}

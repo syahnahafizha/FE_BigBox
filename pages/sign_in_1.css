@@ -1,0 +1,49 @@
+body {
+  font-family: "Inter", sans-serif;
+  /* background-color: #f8f9fa; */
+  margin: 0;
+  padding: 0;
+}
+.full-height {
+  height: 100vh; /* Full height of the viewport */
+}
+.bg-blue {
+  background-color: #007bff; /* Warna biru */
+}
+.posisi {
+  position: fixed;
+  margin-top: -20rem;
+  margin-left: 11px;
+}
+
+.bgputih {
+  height: 100vh; /* Pastikan kontainernya memenuhi tinggi layar */
+}
+.mata {
+  margin-top: -20px;
+}
+
+#passwordChecklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#passwordChecklist li {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+#passwordChecklist li i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#passwordChecklist li.valid i {
+  color: white; /* White color for valid */
+}
+
+#passwordChecklist li.invalid i {
+  color: #dc3545; /* Red color for invalid */
+}

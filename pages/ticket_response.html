@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Response - Bigbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ticket_response.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="sidebar d-md-block sidebar text-dark">
+          <div class="position-sticky pt-3">
+            <h3 class="px-3">TICKET LEAD</h3>
+            <a href="#">Dashboard</a>
+            <a href="#">Users Management</a>
+            <a href="#" class="active">Tickets</a>
+            <a href="#">Approval</a>
+            <a href="#">Report</a>
+          </div>
+          <div class="image">
+            <img src="../assets/images/image_3.png" width="140" alt="" />
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-10 ms-sm-auto">
+          <!-- Navbar -->
+          <div class="navbar-custom d-flex justify-content-between align-items-center">
+            <div class="welcome-message">
+              <button class="btn">
+                <i class="bi bi-list"></i>
+              </button>
+              Welcome! Syahna
+            </div>
+
+            <div class="d-flex align-items-center">
+              <!-- Notification Icon -->
+              <i class="bi bi-bell notification-icon"></i>
+
+              <!-- User Dropdown -->
+              <div class="user-dropdown dropdown">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" />
+                <span class="username">Syahna</span>
+                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h3>Tickets</h3>
+
+            <!-- Ticket Card -->
+            <div class="ticket-card">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="ticket-title">Ticket #242308_1245</p>
+                  <span class="badge badge-category">Front End</span>
+                </div>
+                <div>
+                  <span>Posted at 12:45 AM</span>
+                </div>
+              </div>
+              <p>How to update Analytic Dashboard?</p>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+
+              <!-- Reply Form -->
+              <div class="p-4 bg-light rounded">
+                <form>
+                  <div class="row">
+                    <p class="ticket-title">Reply to Ticket</p>
+                    <div class="col-md-6">
+                      <label for="customerEmail" class="form-label">Customer Email</label>
+                      <input type="email" class="form-control" id="customerEmail" placeholder="name@gmail.com" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="status" class="form-label">Request Ticket Project Phase</label>
+                      <select class="form-select status-dropdown" id="status">
+                        <option selected>Pitching</option>
+                        <option>POC</option>
+                        <option>Deal</option>
+                        <option>Asministration</option>
+                        <option>Delivery</option>
+                        <option>Acceptance</option>
+                        <option>Training</option>
+                        <option>Operation</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="endTicketRequest" class="form-label">End Ticket Request</label>
+                      <input type="date" class="form-control" id="endTicketRequest" value="2024-09-15" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="role" class="form-label">Role</label>
+                      <select class="form-select" id="role">
+                        <option selected>Front End</option>
+                        <option>Back End</option>
+                        <option>DevOps</option>
+                        <option>Data Scientist</option>
+                        <option>Data Analyst</option>
+                        <option>Product Manager</option>
+                        <option>Project Manager</option>
+                        <option>User</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="ticketBody" class="form-label">Ticket Body</label>
+                    <textarea class="form-control" id="ticketBody" rows="4" placeholder="Type ticket issue here."></textarea>
+                    <div class="ticket-body-icons">
+                      <i class="bi bi-file-earmark"></i>
+                      <i class="bi bi-image"></i>
+                      <i class="bi bi-paperclip"></i>
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-secondary me-2 assign-btn">Assign Ticket</button>
+                    <button type="submit" class="btn btn-primary reply-btn">Submit Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
